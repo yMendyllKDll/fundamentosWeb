@@ -5,14 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="./assents/css/style.css" />
 </head>
 <body>
-    <ul>
+    <nav>
+        <ul class="navbar">
         <li><a href="index.html">Home</a></li>
         <li><a href="contato.html">Contato</a></li>
     </ul>
+    </nav>
 
+    <main>
     <h1>Sobre o Anderson</h1>
+
+    <div class="sobre">
+        <div>
+        <img class="imagem" src="https://github.com/yMendyllKDll.png" alt="Foto do criador desse conteudo"/>
+        </div>
+
+    <div class="texto">
+        <div>
     <p> 
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Ducimus magni eos, repellendus molestias blanditiis quasi minus, 
@@ -22,12 +34,15 @@
         Quis expedita mollitia, dolore pariatur, ut qui omnis ratione nobis cupiditate beatae eos 
         quidem saepe reprehenderit impedit sapiente dignissimos magnam dolorem aliquid fugiat sit.
     </p>
+    </div>
+    </div>
+    </main>
 
-    <img src="https://github.com/yMendyllKDll.png" alt="Foto do criador desse conteudo">
-
+    <section>
     <h2>Meu Video Predileto</h2>
 
-    <iframe 
+    <div >
+    <iframe class="video"
     width="560" 
     height="315" 
     src="https://www.youtube-nocookie.com/embed/tl4G2oIf9ss?start=4" 
@@ -36,5 +51,27 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
     </iframe>
+</div>
+    </section>
+    <hr />
+    <footer>
+        <div>
+          <a href="contato.html" target="_blank"
+            ><img
+              class="social"
+              src="./assents/img/instagram.png"
+              alt="Instagram"
+          /></a>
+          <a href="https://www.linkedin.com/in/anderson-mendes-da-costa/" target="_blank"
+            ><img
+              class="social"
+              src="./assents/img/linkedin.png"
+              alt="Linkedin"
+          /></a>
+          
+        </div>
+  
+        <p>Todos os Direitos Reservados</p>
+      </footer>
 </body>
 </html>
