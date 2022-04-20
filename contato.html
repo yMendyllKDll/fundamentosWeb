@@ -16,6 +16,9 @@
           <li>
             <a href="contato.html">Contato</a>
           </li>
+          <li>
+            <button onclick="dark()">Light</button>
+          </li>
         </ul>
           </nav>
           <main>
@@ -27,18 +30,18 @@
             <div>
     <form>
         <label for="nome">Nome:</label><br>
-        <input type="text" id="nome">
-        <br>
-        <br>
+        <input type="text" id="nome" onkeyup="validarNome()" />
+        <div id="txtNome"></div>
+
         <label for="email">E-mail:</label><br>
-        <input type="email" id="email">
-        <br>
-        <br>
+        <input type="email" id="email"onkeyup="validarEmail()"/>
+        <div id="txtEmail"></div>
+
         <label for="assunto">Assunto:</label><br>
-        <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
-        <br>
-        <br>
-        <button class="enviar">Enviar</button>
+        <textarea name="assunto" id="assunto" cols="60" rows="10" onkeyup="validarAssunto()"></textarea>
+        <div id="txtAssunto"></div>
+        <div id="contador"></div>
+        <button type="submit" class="enviar" onclick="enviar()">Enviar</button>
 
         </div>
         <div class="mapa">
@@ -82,6 +85,9 @@
       </div>
 
       <p>Todos os Direitos Reservados</p>
+      <p class="topo" onclick="subirTela()">Voltar ao topo</p>
     </footer>
+
+    <script src="./assents/js/script.js"></script>
 </body>
 </html>
