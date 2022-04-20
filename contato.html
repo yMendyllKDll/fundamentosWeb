@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./assents/css/style.css" />
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="contato.html">Contato</a>
+          </li>
+          <li>
+            <button onclick="dark()">Light</button>
+          </li>
+        </ul>
+          </nav>
+          <main>
+    
+
+    <section class="contato">
+        <div class="formulario">
+            <h1>Entre em contato</h1>
+            <div>
+    <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" onkeyup="validarNome()" />
+        <div id="txtNome"></div>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email"onkeyup="validarEmail()"/>
+        <div id="txtEmail"></div>
+
+        <label for="assunto">Assunto:</label><br>
+        <textarea name="assunto" id="assunto" cols="60" rows="10" onkeyup="validarAssunto()"></textarea>
+        <div id="txtAssunto"></div>
+        <div id="contador"></div>
+        <button type="submit" class="enviar" onclick="enviar()">Enviar</button>
+
+        </div>
+        <div class="mapa">
+        <h2>Endereço:</h2>
+        <p>Shop. Eldorado</p>
+        <p>São Paulo - SP</p>
+    </form>
+
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8850480501187!2d-46.
+            69819638535567!3d-23.57257166789065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+            1!3m3!1m2!1s0x94ce57a2da1311d7%3A0x15c6c7f0360ece1a!2sShopping%20Eldorado!5e0!3m2!1spt-PT!2sbr!
+            4v1650296706562!5m2!1spt-PT!2sbr" 
+        class="maps"
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+    </div>
+    </main>
+    <hr />
+    <footer>
+      <div>
+        <a href="contato.html" target="_blank"
+          ><img
+            class="social"
+            src="./assents/img/instagram.png"
+            alt="Instagram"
+        /></a>
+        <a href="https://www.linkedin.com/in/anderson-mendes-da-costa/" target="_blank"
+          ><img
+            class="social"
+            src="./assents/img/linkedin.png"
+            alt="Linkedin"
+        /></a>
+        
+      </div>
+
+      <p>Todos os Direitos Reservados</p>
+      <p class="topo" onclick="subirTela()">Voltar ao topo</p>
+    </footer>
+
+    <script src="./assents/js/script.js"></script>
+</body>
+</html>
